@@ -11,6 +11,8 @@ It's funny because even though I didn't record properly GPT3 could still figure 
 https://cloud.google.com/docs/authentication/getting-started
 eg: $env:GOOGLE_APPLICATION_CREDENTIALS="C:\Users\username\Downloads\service-account-file.json"
 
+## Oh, have Node installed.
+
 ## Run it!
 npm run start
 
