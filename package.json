@@ -35,8 +35,7 @@
     "start": "concurrently --kill-others \"nodemon ./src/server/server.js\" \"react-scripts start\"",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "set-key": "$env:GOOGLE_APPLICATION_CREDENTIALS='C:\\Users\\Hitchhiker\\Desktop\\Work\\Repositories\\neverupload\\project-speech-336021-d9c2b10deb0c.json'"
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": [

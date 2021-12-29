@@ -31,7 +31,7 @@ import {
   defaultTimer1Value,
   defaultTimer2Value,
 } from "./WaveAnimation.js";
-import { GPT3_APP_KEY } from "./credentials/GPT3Key.js";
+import GPT3_JSON from "./credentials/GPT3Key.json";
 
 const RD3Component = rd3.Component;
 
@@ -136,7 +136,7 @@ class App extends React.Component {
                   "https://api.openai.com/v1/engines/davinci-codex/completions",
                   {
                     headers: {
-                      Authorization: `Bearer ${GPT3_APP_KEY}`,
+                      Authorization: `Bearer ${GPT3_JSON.GPT3_APP_KEY}`,
                       "Content-Type": "application/json",
                     },
                     payload: JSON.stringify({
