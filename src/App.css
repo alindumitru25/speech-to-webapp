@@ -1,38 +1,122 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+#root,
+body,
+html {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  font-family: "Roboto Mono", monospace;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.trig {
+  position: absolute;
+  margin-bottom: -80px;
+  bottom: 50%;
+  transition: 1s bottom;
+}
+.trigBottom {
+  position: absolute;
+  margin-bottom: -80px;
+  bottom: 200px;
+  transition: 1s bottom;
+}
+.trig2 {
+  position: absolute;
+  margin-bottom: -80px;
+  transition: 1s bottom;
+}
+.trig path,
+.trig circle,
+.trig line {
+  stroke: steelblue;
+  stroke-width: 2px;
+  fill: none;
+}
+.trig .axis {
+  stroke: #999;
+}
+.trig text {
+  fill: #444;
+  font-family: sans-serif;
+  font-size: 22;
+}
+.trig2 path,
+.trig circle,
+.trig line {
+  stroke: steelblue;
+  stroke-width: 2px;
+  fill: none;
+}
+.trig2 .axis {
+  stroke: #999;
+}
+.trig2 text {
+  fill: #444;
+  font-family: sans-serif;
+  font-size: 22;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.trigBottom path,
+.trig circle,
+.trig line {
+  stroke: steelblue;
+  stroke-width: 2px;
+  fill: none;
+}
+.trigBottom .axis {
+  stroke: #999;
+}
+.trigBottom text {
+  fill: #444;
+  font-family: sans-serif;
+  font-size: 22;
+}
+
+.lds-ripple {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.lds-ripple div {
+  position: absolute;
+  border: 4px solid #fff;
+  opacity: 1;
+  border-radius: 50%;
+  animation: lds-ripple 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+}
+.lds-ripple div:nth-child(2) {
+  animation-delay: -0.5s;
+}
+@keyframes lds-ripple {
+  0% {
+    top: 36px;
+    left: 36px;
+    width: 0;
+    height: 0;
+    opacity: 1;
   }
-  to {
-    transform: rotate(360deg);
+  100% {
+    top: 0px;
+    left: 0px;
+    width: 72px;
+    height: 72px;
+    opacity: 0;
   }
+}
+
+.lds-ripple-contrast {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.lds-ripple-contrast div {
+  position: absolute;
+  border: 4px solid steelblue;
+  opacity: 1;
+  border-radius: 50%;
+  animation: lds-ripple 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+}
+.lds-ripple-contrast div:nth-child(2) {
+  animation-delay: -0.5s;
 }
